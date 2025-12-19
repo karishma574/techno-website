@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet"  href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script src="https://www.google.com/recaptcha/api.js?render=6LeWEXYrAAAAAHAM1OQbCeaomwNRfa1t9YS1fuA7"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GWEQHMF0Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-0GWEQHMF0Q');
+    </script>
+</head>
+
+<body>
+    
+        
+        <div class="min-h-screen">
+            <div class="fixed top-0 left-0 right-0 h-8 bg-yellow-300 z-50"></div>
+            <header class="fixed top-8 left-0 right-0 z-50 bg-white shadow-sm py-4"
+            data-aos-once="true" data-aos="fade-down">
+                <nav class="container mx-auto px-6 flex justify-between items-center"><a href="index.html"
+                        class="font-heading font-bold text-3xl relative z-10">techno<span
+                            class="text-yellow-300">tech</span></a>
+                    <div class="hidden md:flex items-center space-x-2">
+                        <div class="px-4" tabindex="0"><a href="#services"
+                                class="font-heading font-medium text-base hover:text-yellow-300 transition-colors relative group">Services<span
+                                    class="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-300 transition-all group-hover:w-full"></span></a>
+                        </div>
+                        <div class="px-4" tabindex="0"><a href="#about"
+                                class="font-heading font-medium text-base hover:text-yellow-300 transition-colors relative group">About<span
+                                    class="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-300 transition-all group-hover:w-full"></span></a>
+                        </div>
+                        <div class="px-4" tabindex="0"><a href="#work"
+                                class="font-heading font-medium text-base hover:text-yellow-300 transition-colors relative group">Our
+                                Work<span
+                                    class="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-300 transition-all group-hover:w-full"></span></a>
+                        </div>
+                        <div tabindex="0"><a href="#contact"
+                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 bg-yellow-300 text-black hover:bg-yellow-400 rounded-full px-6 py-5 font-heading text-base font-bold">Contact</a>
+                        </div>
+                    </div><button id="open-menu"
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-10 w-10 md:hidden text-black"
+                        aria-label="Toggle menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu h-6 w-6">
+                            <line x1="4" x2="20" y1="12" y2="12"></line>
+                            <line x1="4" x2="20" y1="6" y2="6"></line>
+                            <line x1="4" x2="20" y1="18" y2="18"></line>
+                        </svg></button>
+                </nav>
+            </header>
+            <div id="mobile-menu"
+                class="fixed top-0 right-0 h-full w-4/5 bg-gradient-to-br from-cyan-500 to-blue-600 text-white z-[60] shadow-xl flex flex-col p-8 transform transition-transform duration-300 ease-in-out md:hidden translate-x-full">
+                <div class="flex justify-end mb-8"><button id="close-menu"
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-10 w-10 text-white"
+                        aria-label="Close menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x h-6 w-6">
+                            <path d="M18 6 6 18"></path>
+                            <path d="m6 6 12 12"></path>
+                        </svg></button></div>
+                <div class="flex flex-col space-y-6 text-xl font-heading"><a href="#services"
+                        class="pb-2 border-b border-white/20 font-medium">Services</a><a href="#about"
+                        class="pb-2 border-b border-white/20 font-medium">About</a><a href="#work"
+                        class="pb-2 border-b border-white/20 font-medium">Our Work</a><a href="#contact"
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 px-4 mt-4 bg-yellow-300 text-black hover:bg-yellow-400 rounded-full w-full font-heading font-bold py-6">Contact</a>
+                </div>
+            </div>
+            <section class="min-h-[90vh] pt-16 relative overflow-hidden flex items-center"
+                style="background: linear-gradient(135deg, rgb(0, 201, 167) 0%, rgb(23, 202, 217) 50%, rgb(79, 85, 253) 100%) 53.03% 53.03% / 200% 200%;">
+              
+              
+                <div class="absolute rounded-full bg-blue-400 h-3 w-3 dot"
+                    style=" left: 10%; top: 20%;">
+                </div>
+                <div class="absolute rounded-full bg-yellow-400 h-3 w-3 dot"
+                    style="left: 70%; top: 60%;">
+                </div>
+                <div class="absolute rounded-full bg-purple-400 h-3 w-3 dot"
+                    style=" left: 80%; top: 10%;">
+                </div>
+                <div class="absolute rounded-full bg-green-400 h-3 w-3 dot"
+                    style="left: 20%; top: 70%;">
+                </div>
+                <div class="absolute rounded-full bg-pink-400 h-3 w-3 dot"
+                    style="left: 50%; top: 40%;">
+                </div>
+                <div class="absolute w-[500px] h-[500px] bg-gradient-to-r from-blue-400/20 to-cyan-400/20 rounded-full filter blur-[80px] mix-blend-overlay"
+                    style="top: 30%; left: 50%; transform: translateX(-27.648px) translateY(23.016px) translateX(-50%);">
+                </div>
+                <div class="absolute w-[300px] h-[300px] bg-gradient-to-r from-purple-400/20 to-pink-400/20 rounded-full filter blur-[60px] mix-blend-overlay"
+                    style="top: 60%; left: 30%; transform: translateX(27.648px) translateY(-23.016px);"></div>
+
+
+                <div class="container mx-auto px-6 relative z-10 py-10 md:py-16" id="hero-container" data-aos-once="true" data-aos="zoom-in">
+                    <div class="flex flex-col items-center text-center text-white"><span
+                            class="inline-block font-heading font-bold px-4 py-2 border border-white/20 rounded-full backdrop-blur-sm mb-8 bg-yellow-300 text-black"
+                            data-aos-once="true" data-aos="zoom-in">Collaborative Brand Builders</span>
+                        <h1 class="font-heading text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-8 max-w-4xl"
+                        data-aos-once="true" data-aos="zoom-in"><span class="text-white">We are a team of</span>
+                            <div class="h-[1.2em] overflow-hidden relative inline-block w-full my-2 swiper">
+                                <div class="swiper-wrapper">
+                                    <span class="flex items-center justify-center w-full text-center text-yellow-300 swiper-slide"
+                                        data-aos-once="true" data-aos="zoom-in" >
+                            
+                                        researchers
+                                    </span>
+
+                                    <span class="flex items-center justify-center w-full text-center text-yellow-300 swiper-slide"
+                                        data-aos-once="true" data-aos="zoom-in" >
+                            
+                                        strategists
+                                    </span>
+
+                                    <span class=" flex items-center justify-center w-full text-center text-yellow-300 swiper-slide"
+                                        data-aos-once="true" data-aos="zoom-in" >
+                            
+                                        brand crafters
+                                    </span>
+
+                                    <span class=" flex items-center justify-center w-full text-center text-yellow-300 swiper-slide"
+                                        data-aos-once="true" data-aos="zoom-in" >
+                            
+                                        digital creators
+                                    </span>
+
+                                    <span class=" flex items-center justify-center w-full text-center text-yellow-300 swiper-slide"
+                                        data-aos-once="true" data-aos="zoom-in" >
+                            
+                                        product innovators
+                                    </span>
+
+                                    
+
+                                </div>
+                            
+                            </div>
+                            <div class="text-white"><span>that </span><span class="text-yellow-300 font-bold">work
+                                    together</span><span> to </span><span
+                                    class="text-white font-bold text-[1.2em]">generate </span><span
+                                    class="text-white">business-led </span><span
+                                    class="text-white font-bold text-[1.2em] animate-pulse-slow">design </span><span
+                                    class="text-white">solutions.</span></div>
+                        </h1>
+                        <div tabindex="0" data-aos-once="true" data-aos="zoom-in"><a href="#about"
+                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-11 bg-yellow-300 text-black hover:bg-yellow-400 rounded-full shadow-lg font-heading text-lg font-bold px-8 py-6">About
+                                us</a></div>
+                    </div>
+                </div>
+
+
+                <div class="absolute top-0 left-0 w-full h-8 bg-yellow-300" style="opacity: 1;"></div>
+                <div class="absolute -bottom-2 left-0 right-0 h-6 bg-white rounded-t-[30%] z-[5]"
+                data-aos-once="true" data-aos="fade-up"></div>
+                <div class="absolute bg-blue-400 rounded-full h-3 w-3 dot"
+                    style="left: 81.5886%; top: 41.4437%; ">
+                </div>
+                <div class="absolute bg-pink-400 rounded-full h-3 w-3 dot"
+                    style="left: 69.7492%; top: 42.3821%;">
+                </div>
+                <div class="absolute bg-purple-400 rounded-full h-3 w-3 dot"
+                    style="left: 76.9292%; top: 56.0837%; ">
+                </div>
+                <div class="absolute bg-yellow-400 rounded-full h-3 w-3 dot"
+                    style="left: 39.0349%; top: 45.3231%; ">
+                </div>
+                <div class="absolute bg-green-400 rounded-full h-3 w-3 dot"
+                    style="left: 15.8335%; top: 69.3683%; ">
+                </div>
+                <div class="absolute bg-red-400 rounded-full h-3 w-3 dot"
+                    style="left: 62.6343%; top: 27.7846%; ">
+                </div>
+
+
+            </section>
+            <section id="services" class="py-20 md:py-0 relative overflow-hidden">
+                <div class="w-full h-8 bg-yellow-300"></div>
+                <div class="absolute top-8 left-0 w-full h-16 bg-blue-600" style="opacity: 1;"></div>
+                <div class="relative z-10">
+                    <div class="container mx-auto px-6 py-20">
+                        <div class="max-w-3xl mx-auto mb-16" data-aos-once="true" data-aos="fade-up" >
+                            <div class="flex flex-col md:flex-row justify-between md:items-end">
+                                <div><span class="text-blue-600 font-bold inline-block mb-2 text-lg" data-aos-once="true" data-aos="fade-right"
+                                        s >What We Do</span>
+                                    <h2 class="font-heading text-4xl md:text-5xl font-bold mb-2" data-aos-once="true" data-aos="fade-up"
+                                        >A Full Spectrum of<br>Design
+                                        Services</h2>
+                                </div>
+                                <p class="text-lg text-gray-600 md:text-xl md:max-w-md mt-4 md:mt-0" data-aos-once="true" data-aos="fade-up"
+                                    >We combine strategy, design, and
+                                    technology to create experiences that drive business growth and connect with your
+                                    audience.</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8" data-aos-once="true" data-aos="fade-up"
+                            >
+                            <div class="service-card relative rounded-2xl overflow-hidden h-[350px] md:h-[400px]"
+                                style="background-color: rgb(79, 85, 253);">
+                                <div class="absolute inset-0 p-8 flex flex-col justify-between h-full text-white">
+                                    <div>
+                                        <div class="text-white text-4xl mb-6"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="lucide lucide-lightbulb h-10 w-10">
+                                                <path
+                                                    d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5">
+                                                </path>
+                                                <path d="M9 18h6"></path>
+                                                <path d="M10 22h4"></path>
+                                            </svg></div>
+                                        <h3 class="font-heading text-2xl font-bold mb-3 text-white">Strategy &amp;
+                                            Innovation</h3>
+                                        <p class="text-white/90 text-lg">Forward-thinking approaches to solve complex
+                                            business challenges and identify growth opportunities.</p>
+                                    </div>
+                                    <div class="flex items-center justify-between font-medium text-white mt-4"><span
+                                            class="font-bold">Learn more</span>
+                                        <div
+                                            class="h-12 w-12 rounded-full bg-white/20 flex items-center justify-center transition-all duration-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-arrow-right h-5 w-5 text-white">
+                                                <path d="M5 12h14"></path>
+                                                <path d="m12 5 7 7-7 7"></path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <div class="absolute right-0 bottom-0 w-32 h-32 rounded-tl-full bg-white/5"></div>
+                                <div class="absolute left-0 top-0 w-16 h-16 rounded-br-full bg-white/5"></div>
+                            </div>
+                            <div class="service-card relative rounded-2xl overflow-hidden h-[350px] md:h-[400px]"
+                                style="background-color: rgb(0, 201, 167);">
+                                <div class="absolute inset-0 p-8 flex flex-col justify-between h-full text-white">
+                                    <div>
+                                        <div class="text-white text-4xl mb-6"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="lucide lucide-paintbrush h-10 w-10">
+                                                <path d="m14.622 17.897-10.68-2.913"></path>
+                                                <path
+                                                    d="M18.376 2.622a1 1 0 1 1 3.002 3.002L17.36 9.643a.5.5 0 0 0 0 .707l.944.944a2.41 2.41 0 0 1 0 3.408l-.944.944a.5.5 0 0 1-.707 0L8.354 7.348a.5.5 0 0 1 0-.707l.944-.944a2.41 2.41 0 0 1 3.408 0l.944.944a.5.5 0 0 0 .707 0z">
+                                                </path>
+                                                <path
+                                                    d="M9 8c-1.804 2.71-3.97 3.46-6.583 3.948a.507.507 0 0 0-.302.819l7.32 8.883a1 1 0 0 0 1.185.204C12.735 20.405 16 16.792 16 15">
+                                                </path>
+                                            </svg></div>
+                                        <h3 class="font-heading text-2xl font-bold mb-3 text-white">Branding Design</h3>
+                                        <p class="text-white/90 text-lg">Comprehensive brand identity development to
+                                            create memorable and compelling brand experiences.</p>
+                                    </div>
+                                    <div class="flex items-center justify-between font-medium text-white mt-4"><span
+                                            class="font-bold">Learn more</span>
+                                        <div
+                                            class="h-12 w-12 rounded-full bg-white/20 flex items-center justify-center transition-all duration-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-arrow-right h-5 w-5 text-white">
+                                                <path d="M5 12h14"></path>
+                                                <path d="m12 5 7 7-7 7"></path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <div class="absolute right-0 bottom-0 w-32 h-32 rounded-tl-full bg-white/5"></div>
+                                <div class="absolute left-0 top-0 w-16 h-16 rounded-br-full bg-white/5"></div>
+                            </div>
+                            <div class="service-card relative rounded-2xl overflow-hidden h-[350px] md:h-[400px]"
+                                style="background-color: rgb(255, 84, 112);">
+                                <div class="absolute inset-0 p-8 flex flex-col justify-between h-full text-white">
+                                    <div>
+                                        <div class="text-white text-4xl mb-6"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="lucide lucide-globe h-10 w-10">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                                <path d="M2 12h20"></path>
+                                            </svg></div>
+                                        <h3 class="font-heading text-2xl font-bold mb-3 text-white">Digital Design</h3>
+                                        <p class="text-white/90 text-lg">User-centered websites and digital products
+                                            that deliver exceptional experiences across all devices.</p>
+                                    </div>
+                                    <div class="flex items-center justify-between font-medium text-white mt-4"><span
+                                            class="font-bold">Learn more</span>
+                                        <div
+                                            class="h-12 w-12 rounded-full bg-white/20 flex items-center justify-center transition-all duration-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-arrow-right h-5 w-5 text-white">
+                                                <path d="M5 12h14"></path>
+                                                <path d="m12 5 7 7-7 7"></path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <div class="absolute right-0 bottom-0 w-32 h-32 rounded-tl-full bg-white/5"></div>
+                                <div class="absolute left-0 top-0 w-16 h-16 rounded-br-full bg-white/5"></div>
+                            </div>
+                            <div class="service-card relative rounded-2xl overflow-hidden h-[350px] md:h-[400px]"
+                                style="background-color: rgb(255, 192, 67);">
+                                <div class="absolute inset-0 p-8 flex flex-col justify-between h-full text-white">
+                                    <div>
+                                        <div class="text-white text-4xl mb-6"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="lucide lucide-boxes h-10 w-10">
+                                                <path
+                                                    d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z">
+                                                </path>
+                                                <path d="m7 16.5-4.74-2.85"></path>
+                                                <path d="m7 16.5 5-3"></path>
+                                                <path d="M7 16.5v5.17"></path>
+                                                <path
+                                                    d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z">
+                                                </path>
+                                                <path d="m17 16.5-5-3"></path>
+                                                <path d="m17 16.5 4.74-2.85"></path>
+                                                <path d="M17 16.5v5.17"></path>
+                                                <path
+                                                    d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z">
+                                                </path>
+                                                <path d="M12 8 7.26 5.15"></path>
+                                                <path d="m12 8 4.74-2.85"></path>
+                                                <path d="M12 13.5V8"></path>
+                                            </svg></div>
+                                        <h3 class="font-heading text-2xl font-bold mb-3 text-white">Product Design</h3>
+                                        <p class="text-white/90 text-lg">Innovative physical and digital product
+                                            development from concept to market-ready solutions.</p>
+                                    </div>
+                                    <div class="flex items-center justify-between font-medium text-white mt-4"><span
+                                            class="font-bold">Learn more</span>
+                                        <div
+                                            class="h-12 w-12 rounded-full bg-white/20 flex items-center justify-center transition-all duration-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-arrow-right h-5 w-5 text-white">
+                                                <path d="M5 12h14"></path>
+                                                <path d="m12 5 7 7-7 7"></path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <div class="absolute right-0 bottom-0 w-32 h-32 rounded-tl-full bg-white/5"></div>
+                                <div class="absolute left-0 top-0 w-16 h-16 rounded-br-full bg-white/5"></div>
+                            </div>
+                            <div class="service-card relative rounded-2xl overflow-hidden h-[350px] md:h-[400px]"
+                                style="background-color: rgb(106, 61, 232);">
+                                <div class="absolute inset-0 p-8 flex flex-col justify-between h-full text-white">
+                                    <div>
+                                        <div class="text-white text-4xl mb-6"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="lucide lucide-message-square h-10 w-10">
+                                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z">
+                                                </path>
+                                            </svg></div>
+                                        <h3 class="font-heading text-2xl font-bold mb-3 text-white">Communication
+                                            Services</h3>
+                                        <p class="text-white/90 text-lg">Strategic communication plans and content
+                                            creation to effectively engage with your target audience.</p>
+                                    </div>
+                                    <div class="flex items-center justify-between font-medium text-white mt-4"><span
+                                            class="font-bold">Learn more</span>
+                                        <div
+                                            class="h-12 w-12 rounded-full bg-white/20 flex items-center justify-center transition-all duration-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-arrow-right h-5 w-5 text-white">
+                                                <path d="M5 12h14"></path>
+                                                <path d="m12 5 7 7-7 7"></path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <div class="absolute right-0 bottom-0 w-32 h-32 rounded-tl-full bg-white/5"></div>
+                                <div class="absolute left-0 top-0 w-16 h-16 rounded-br-full bg-white/5"></div>
+                            </div>
+                            <div class="service-card relative rounded-2xl overflow-hidden h-[350px] md:h-[400px]"
+                                style="background-color: rgb(255, 126, 54);">
+                                <div class="absolute inset-0 p-8 flex flex-col justify-between h-full text-white">
+                                    <div>
+                                        <div class="text-white text-4xl mb-6"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="lucide lucide-package h-10 w-10">
+                                                <path
+                                                    d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z">
+                                                </path>
+                                                <path d="M12 22V12"></path>
+                                                <path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"></path>
+                                                <path d="m7.5 4.27 9 5.15"></path>
+                                            </svg></div>
+                                        <h3 class="font-heading text-2xl font-bold mb-3 text-white">Packaging Design
+                                        </h3>
+                                        <p class="text-white/90 text-lg">Eye-catching packaging solutions that enhance
+                                            product perception and create shelf impact.</p>
+                                    </div>
+                                    <div class="flex items-center justify-between font-medium text-white mt-4"><span
+                                            class="font-bold">Learn more</span>
+                                        <div
+                                            class="h-12 w-12 rounded-full bg-white/20 flex items-center justify-center transition-all duration-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-arrow-right h-5 w-5 text-white">
+                                                <path d="M5 12h14"></path>
+                                                <path d="m12 5 7 7-7 7"></path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <div class="absolute right-0 bottom-0 w-32 h-32 rounded-tl-full bg-white/5"></div>
+                                <div class="absolute left-0 top-0 w-16 h-16 rounded-br-full bg-white/5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-20 md:py-28 relative bg-gradient-to-b from-white to-blue-50 overflow-hidden">
+                <div class="absolute top-0 left-10 w-32 h-32 bg-yellow-300 rounded-full blur-3xl opacity-20"></div>
+                <div class="absolute bottom-0 right-10 w-48 h-48 bg-blue-400 rounded-full blur-3xl opacity-20"></div>
+                <div class="absolute top-40 right-20 w-24 h-24 bg-pink-400 rounded-full blur-2xl opacity-20"></div>
+                <div class="container mx-auto px-6 relative z-10">
+                    <div class="text-center max-w-3xl mx-auto mb-16" data-aos-once="true" data-aos="fade-up" >
+                        <span class="bg-yellow-300 text-black font-bold px-4 py-1 rounded-full inline-block mb-2">How We
+                            Work</span>
+                        <h2 class="font-heading text-3xl md:text-5xl font-bold mt-3 mb-6">Our Design Process</h2>
+                        <p class="text-gray-600 text-lg">A proven methodology that delivers exceptional results through
+                            collaboration and strategic thinking.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                        <div class="order-2 md:order-1" data-aos-once="true" data-aos="fade-up" >
+                            <div class="space-y-12">
+                                <div class="flex group hover:scale-105 transition-transform duration-300">
+                                    <div class="mr-6">
+                                        <div
+                                            class="flex items-center justify-center w-14 h-14 rounded-full bg-yellow-300 text-black font-bold text-xl shadow-lg group-hover:scale-110 transition-all duration-300">
+                                            1</div>
+                                        <div
+                                            class="h-full w-1 bg-gradient-to-b from-yellow-300 to-blue-500/20 mx-auto mt-4 mb-4">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="font-heading text-2xl font-bold mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                                            Discover</h3>
+                                        <p
+                                            class="text-gray-600 group-hover:text-gray-900 transition-colors duration-300">
+                                            We immerse ourselves in your business, understanding your goals, audience,
+                                            and challenges through research and workshops.</p>
+                                    </div>
+                                </div>
+                                <div class="flex group hover:scale-105 transition-transform duration-300">
+                                    <div class="mr-6">
+                                        <div
+                                            class="flex items-center justify-center w-14 h-14 rounded-full bg-yellow-300 text-black font-bold text-xl shadow-lg group-hover:scale-110 transition-all duration-300">
+                                            2</div>
+                                        <div
+                                            class="h-full w-1 bg-gradient-to-b from-yellow-300 to-blue-500/20 mx-auto mt-4 mb-4">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="font-heading text-2xl font-bold mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                                            Define</h3>
+                                        <p
+                                            class="text-gray-600 group-hover:text-gray-900 transition-colors duration-300">
+                                            We translate insights into a clear strategy and roadmap, establishing
+                                            project objectives and success metrics.</p>
+                                    </div>
+                                </div>
+                                <div class="flex group hover:scale-105 transition-transform duration-300">
+                                    <div class="mr-6">
+                                        <div
+                                            class="flex items-center justify-center w-14 h-14 rounded-full bg-yellow-300 text-black font-bold text-xl shadow-lg group-hover:scale-110 transition-all duration-300">
+                                            3</div>
+                                        <div
+                                            class="h-full w-1 bg-gradient-to-b from-yellow-300 to-blue-500/20 mx-auto mt-4 mb-4">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="font-heading text-2xl font-bold mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                                            Design</h3>
+                                        <p
+                                            class="text-gray-600 group-hover:text-gray-900 transition-colors duration-300">
+                                            Our creative team crafts innovative solutions through collaborative
+                                            ideation, prototyping, and iterative refinement.</p>
+                                    </div>
+                                </div>
+                                <div class="flex group hover:scale-105 transition-transform duration-300">
+                                    <div class="mr-6">
+                                        <div
+                                            class="flex items-center justify-center w-14 h-14 rounded-full bg-yellow-300 text-black font-bold text-xl shadow-lg group-hover:scale-110 transition-all duration-300">
+                                            4</div>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="font-heading text-2xl font-bold mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                                            Deliver</h3>
+                                        <p
+                                            class="text-gray-600 group-hover:text-gray-900 transition-colors duration-300">
+                                            We execute with precision, providing ongoing support to ensure successful
+                                            implementation and measurable results.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-1 md:order-2" data-aos-once="true" data-aos="fade-up" >
+                            <div class="relative group hover:scale-[1.02] transition-all duration-500 cursor-pointer">
+                                <div
+                                    class="absolute -inset-4 bg-gradient-to-r from-yellow-300 via-blue-500 to-pink-500 rounded-2xl blur-xl opacity-40 group-hover:opacity-80 transition-all duration-500">
+                                </div>
+                                <div class="relative"><img
+                                        src="img/ed481571e6e6054c1d94156f55fee365d6a671aca2fd32e7f2ccb02b2a63ee3c.jpg"
+                                        alt="Branding strategy session"
+                                        class="rounded-2xl shadow-xl object-cover h-[500px] w-full">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-tr from-blue-600/30 via-transparent to-yellow-300/20 rounded-2xl">
+                                    </div>
+                                    <div
+                                        class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent rounded-b-2xl">
+                                        <span class="text-white font-heading font-bold text-xl">Collaborative design
+                                            sessions</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="relative">
+                <div class="bg-blue-600 py-28 md:py-36 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-full h-8 bg-yellow-300" data-aos-once="true" data-aos="fade-up" ></div>
+                    <div class="container mx-auto px-6 relative z-10">
+                        <div class="max-w-3xl" data-aos-once="true" data-aos="fade-up" ><span
+                                class="inline-block text-white/90 font-bold px-4 py-2 border border-white/20 rounded-full backdrop-blur-sm mb-6" data-aos-once="true" data-aos="fade-right"
+                                >About Us</span>
+                            <h2 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8" data-aos-once="true" data-aos="fade-up"
+                                >Glimpses of <br>Brand Success</h2>
+                            <p class="text-white/90 text-lg md:text-xl" data-aos-once="true" data-aos="fade-up"
+                                >At techno, we blend strategic
+                                thinking with creative execution to deliver designs that stand out and perform. Our
+                                multidisciplinary approach ensures every project is approached holistically.</p>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-500/50 rounded-full -mb-48 -mr-48 blur-3xl" data-aos-once="true" data-aos="fade-up"
+                        ></div>
+                    <div class="absolute top-0 left-0 w-96 h-96 bg-blue-700/50 rounded-full -mt-48 -ml-48 blur-3xl" data-aos-once="true" data-aos="fade-up"
+                        ></div>
+                </div>
+                <div class="py-20 bg-gray-50">
+                    <div class="container mx-auto px-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                            <div class="p-6 bg-white rounded-2xl shadow-md"  data-aos-once="true" data-aos="zoom-in">
+                                <p class="font-heading font-bold text-4xl text-blue-600">120+</p>
+                                <p class="text-gray-700 font-medium">Happy Clients</p>
+                            </div>
+                            <div class="p-6 bg-white rounded-2xl shadow-md"  data-aos-once="true" data-aos="zoom-in">
+                                <p class="font-heading font-bold text-4xl text-blue-600">350+</p>
+                                <p class="text-gray-700 font-medium">Projects Completed</p>
+                            </div>
+                            <div class="p-6 bg-white rounded-2xl shadow-md"  data-aos-once="true" data-aos="zoom-in">
+                                <p class="font-heading font-bold text-4xl text-blue-600">24</p>
+                                <p class="text-gray-700 font-medium">Design Awards</p>
+                            </div>
+                            <div class="p-6 bg-white rounded-2xl shadow-md"  data-aos-once="true" data-aos="zoom-in">
+                                <p class="font-heading font-bold text-4xl text-blue-600">15+</p>
+                                <p class="text-gray-700 font-medium">Years Experience</p>
+                            </div>
+                        </div>
+                        <div class="mt-32"  data-aos-once="true" data-aos="fade-up">
+                            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16">
+                                <h2 class="font-heading text-3xl md:text-4xl font-bold"
+                                     data-aos-once="true" data-aos="fade-up">Our offices</h2>
+                                <div class="mt-6 md:mt-0"  data-aos-once="true" data-aos="fade-up">
+                                    <h3 class="font-heading text-2xl md:text-3xl font-bold mb-4">You can find us in
+                                        <span class="text-blue-600">London</span>, <br><span
+                                            class="text-blue-600">Bangkok</span> &amp; <span
+                                            class="text-blue-600">Hong Kong</span></h3><a href="#contact"
+                                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-11 px-8 bg-black text-white rounded-full hover:bg-black/90">Say
+                                        Hi!</a>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 about-cards">
+                                <div class="relative rounded-2xl bg-white p-6 shadow-lg flex flex-col justify-between h-[200px] md:h-[230px] overflow-hidden"
+                                     data-aos-once="true" data-aos="fade-up">
+                                    <div>
+                                        <h3 class="font-heading text-xl font-bold">London HQ, <br>UK</h3>
+                                        <p class="text-xl font-bold mt-2">06:05:07 PM</p>
+                                    </div>
+                                    <p class="text-gray-600 text-sm">1 Mark Square London, England EC2A 4EG</p>
+                                    <div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-tl-3xl"
+                                        style="background-color: rgb(23, 202, 217);"></div>
+                                </div>
+                                <div class="relative rounded-2xl bg-white p-6 shadow-lg flex flex-col justify-between h-[200px] md:h-[230px] overflow-hidden"
+                                     data-aos-once="true" data-aos="fade-up">
+                                    <div>
+                                        <h3 class="font-heading text-xl font-bold">Bangkok, <br>Thailand </h3>
+                                        <p class="text-xl font-bold mt-2">01:05:07 PM</p>
+                                    </div>
+                                    <p class="text-gray-600 text-sm z-[9999]">Spring Tower, Phayathai Rd Khwaeng Thung Phaya Thai, Khet Ratchathewi Bangkok, Bangkok 10400</p>
+                                    <div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-tl-3xl"
+                                        style="background-color: rgb(255, 84, 112);"></div>
+                                </div>
+                                <div class="relative rounded-2xl bg-white p-6 shadow-lg flex flex-col justify-between h-[200px] md:h-[230px] overflow-hidden"
+                                     data-aos-once="true" data-aos="fade-up">
+                                    <div>
+                                        <h3 class="font-heading text-xl font-bold">Hong Kong, <br>China</h3>
+                                        <p class="text-xl font-bold mt-2">07:05:07 PM</p>
+                                    </div>
+                                    <p class="text-gray-600 text-sm z-[9999]">21/F, 14 Tai Koo Wan Rd, Quarry Bay, Hong Kong</p>
+                                    <div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-tl-3xl"
+                                        style="background-color: rgb(255, 192, 67);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full h-8 bg-yellow-300"></div>
+                <div class="w-full h-8 bg-blue-600"></div>
+            </section>
+            <section id="work" class="pt-0 pb-28 bg-gray-50">
+                <div class="container mx-auto px-6" >
+                    <div class="mb-16"  data-aos-once="true" data-aos="fade-up">
+                        <div class="flex flex-col md:flex-row justify-between md:items-end">
+                            <div><span class="text-blue-600 font-bold inline-block mb-2 text-lg"
+                                     data-aos-once="true" data-aos="fade-right">Case Studies</span>
+                                <h2 class="font-heading text-4xl md:text-5xl font-bold mb-2"
+                                     data-aos-once="true" data-aos="fade-up">Glimpses of <br>Brand Success</h2>
+                            </div>
+                            <p class="text-lg text-gray-600 md:text-xl md:max-w-md mt-4 md:mt-0"
+                                 data-aos-once="true" data-aos="fade-up">Explore some of our award-winning
+                                projects that deliver measurable results for our clients.</p>
+                        </div>
+                    </div>
+                    <div  data-aos-once="true" data-aos="fade-up">
+                        <div class="flex flex-wrap gap-4 mb-12 work-filter-btns" id="tabs-btns">
+                            <button
+                                class="px-6 py-2 rounded-full text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200 tab-active"
+                                tabindex="0" data-id="All">All</button><button
+                                class="px-6 py-2 rounded-full text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200"
+                                tabindex="0" data-id="Branding">Branding</button><button
+                                class="px-6 py-2 rounded-full text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200"
+                                tabindex="0" data-id="Digital">Digital</button><button
+                                class="px-6 py-2 rounded-full text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200"
+                                tabindex="0" data-id="Product">Product</button><button
+                                class="px-6 py-2 rounded-full text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200"
+                                tabindex="0" data-id="Packaging">Packaging</button><button
+                                class="px-6 py-2 rounded-full text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200"
+                                tabindex="0" data-id="UX">UX/UI</button>
+                            </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 tabs-blocks" id="tabs-block">
+                        <div class="group relative overflow-hidden rounded-2xl"
+                             data-aos-once="true" data-aos="fade-up" data-filter="Digital">
+                            <div class="flex flex-col h-full">
+                                <div class="relative overflow-hidden">
+                                    <div class="aspect-[4/3] bg-cover bg-center"
+                                        style="background-image: url(&quot;img/63a77399fa597778ff8a912e89c526307e822f5c6b530e12f3830b4df563647b.jpg">
+                                    </div>
+                                    <div class="absolute inset-0 opacity-30 md:opacity-0 group-hover:opacity-80 transition-opacity duration-300"
+                                        style="background-color: rgb(79, 85, 253);"></div>
+                                    <div class="absolute inset-0 p-8 text-white flex flex-col justify-between opacity-100 md:opacity-100 transition-opacity duration-300"
+                                        style="transform: none;">
+                                        <div>
+                                            <p class="text-sm uppercase tracking-wider font-medium mb-1">Digital</p>
+                                            <h3 class="font-heading text-2xl font-bold">Fintech Mobile App</h3>
+                                        </div>
+                                        <div
+                                            class="h-12 w-12 rounded-full bg-white/20 flex items-center justify-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-arrow-right h-5 w-5 text-white">
+                                                <path d="M5 12h14"></path>
+                                                <path d="m12 5 7 7-7 7"></path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <div class="bg-white p-6 flex justify-center items-center min-h-[80px]"><img
+                                        src="img/4a02301b24564730d3717af77b93f33e261b12680621d16e026ee49c578ebad3.jpg"
+                                        alt="Fintech Mobile App logo" class="h-10"></div>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden rounded-2xl"
+                             data-aos-once="true" data-aos="fade-up" data-filter="Packaging">
+                            <div class="flex flex-col h-full">
+                                <div class="relative overflow-hidden">
+                                    <div class="aspect-[4/3] bg-cover bg-center"
+                                        style="background-image: url(&quot;img/5c426a6810a36a20fd514b077243c3e3a6a77e9a9f798f4649240b1a8440fc5b.jpg">
+                                    </div>
+                                    <div class="absolute inset-0 opacity-30 md:opacity-0 group-hover:opacity-80 transition-opacity duration-300"
+                                        style="background-color: rgb(0, 201, 167);"></div>
+                                    <div class="absolute inset-0 p-8 text-white flex flex-col justify-between opacity-100 md:opacity-100 transition-opacity duration-300"
+                                        style="transform: none;">
+                                        <div>
+                                            <p class="text-sm uppercase tracking-wider font-medium mb-1">Packaging</p>
+                                            <h3 class="font-heading text-2xl font-bold">Eco-Friendly Packaging</h3>
+                                        </div>
+                                        <div
+                                            class="h-12 w-12 rounded-full bg-white/20 flex items-center justify-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-arrow-right h-5 w-5 text-white">
+                                                <path d="M5 12h14"></path>
+                                                <path d="m12 5 7 7-7 7"></path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <div class="bg-white p-6 flex justify-center items-center min-h-[80px]"><img
+                                        src="img/cf6e9e815bdcb89c5c8ba23f48ea839e4b0379c01667d53f4e7bd7bb4dfc3fb7.jpg"
+                                        alt="Eco-Friendly Packaging logo" class="h-10"></div>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden rounded-2xl"
+                             data-aos-once="true" data-aos="fade-up" data-filter="Digital">
+                            <div class="flex flex-col h-full">
+                                <div class="relative overflow-hidden">
+                                    <div class="aspect-[4/3] bg-cover bg-center"
+                                        style="background-image: url(&quot;img/d33568772c2ac7fe0008ed13ff8351b50c599c3006c0a86127278ca117c76727.jpg">
+                                    </div>
+                                    <div class="absolute inset-0 opacity-30 md:opacity-0 group-hover:opacity-80 transition-opacity duration-300"
+                                        style="background-color: rgb(255, 84, 112);"></div>
+                                    <div class="absolute inset-0 p-8 text-white flex flex-col justify-between opacity-100 md:opacity-100 transition-opacity duration-300"
+                                        style="transform: none;">
+                                        <div>
+                                            <p class="text-sm uppercase tracking-wider font-medium mb-1">Digital</p>
+                                            <h3 class="font-heading text-2xl font-bold">E-commerce Platform</h3>
+                                        </div>
+                                        <div
+                                            class="h-12 w-12 rounded-full bg-white/20 flex items-center justify-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-arrow-right h-5 w-5 text-white">
+                                                <path d="M5 12h14"></path>
+                                                <path d="m12 5 7 7-7 7"></path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <div class="bg-white p-6 flex justify-center items-center min-h-[80px]"><img
+                                        src="img/9dddb5cced2e7d52b9113bbfab1419ddca81a18873851b6ee6602b9d667eab5b.jpg"
+                                        alt="E-commerce Platform logo" class="h-10"></div>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden rounded-2xl"
+                             data-aos-once="true" data-aos="fade-up" data-filter="Product">
+                            <div class="flex flex-col h-full">
+                                <div class="relative overflow-hidden">
+                                    <div class="aspect-[4/3] bg-cover bg-center"
+                                        style="background-image: url(&quot;img/1462260e34292197c94f44c257b5770df22d65055264b925da0a8fc7c9070381.jpg">
+                                    </div>
+                                    <div class="absolute inset-0 opacity-30 md:opacity-0 group-hover:opacity-80 transition-opacity duration-300"
+                                        style="background-color: rgb(255, 192, 67);"></div>
+                                    <div class="absolute inset-0 p-8 text-white flex flex-col justify-between opacity-100 md:opacity-100 transition-opacity duration-300"
+                                        style="transform: none;">
+                                        <div>
+                                            <p class="text-sm uppercase tracking-wider font-medium mb-1">Product</p>
+                                            <h3 class="font-heading text-2xl font-bold">Smart Home Device</h3>
+                                        </div>
+                                        <div
+                                            class="h-12 w-12 rounded-full bg-white/20 flex items-center justify-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-arrow-right h-5 w-5 text-white">
+                                                <path d="M5 12h14"></path>
+                                                <path d="m12 5 7 7-7 7"></path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <div class="bg-white p-6 flex justify-center items-center min-h-[80px]"><img
+                                        src="img/78f3e250b11eb845cb00dc23ebee902e29ee69094c2e98d17bfde09f2a740ac4.jpg"
+                                        alt="Smart Home Device logo" class="h-10"></div>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden rounded-2xl"
+                             data-aos-once="true" data-aos="fade-up" data-filter="UX">
+                            <div class="flex flex-col h-full">
+                                <div class="relative overflow-hidden">
+                                    <div class="aspect-[4/3] bg-cover bg-center"
+                                        style="background-image: url(&quot;img/131e889a75ef71f1c22b4343564ca36ab47ddb8db7c382861edbb50beca597b8.jpg">
+                                    </div>
+                                    <div class="absolute inset-0 opacity-30 md:opacity-0 group-hover:opacity-80 transition-opacity duration-300"
+                                        style="background-color: rgb(106, 61, 232);"></div>
+                                    <div class="absolute inset-0 p-8 text-white flex flex-col justify-between opacity-100 md:opacity-100 transition-opacity duration-300"
+                                        style="transform: none;">
+                                        <div>
+                                            <p class="text-sm uppercase tracking-wider font-medium mb-1">UX/UI</p>
+                                            <h3 class="font-heading text-2xl font-bold">SaaS Dashboard</h3>
+                                        </div>
+                                        <div
+                                            class="h-12 w-12 rounded-full bg-white/20 flex items-center justify-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-arrow-right h-5 w-5 text-white">
+                                                <path d="M5 12h14"></path>
+                                                <path d="m12 5 7 7-7 7"></path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <div class="bg-white p-6 flex justify-center items-center min-h-[80px]"><img
+                                        src="img/505a219f012d9fed14c0453d747403a3a226cda40e0a852bf71462049308767c.jpg"
+                                        alt="SaaS Dashboard logo" class="h-10"></div>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden rounded-2xl"
+                             data-aos-once="true" data-aos="fade-up" data-filter="Branding">
+                            <div class="flex flex-col h-full">
+                                <div class="relative overflow-hidden">
+                                    <div class="aspect-[4/3] bg-cover bg-center"
+                                        style="background-image: url(&quot;img/b0f58acf158200042c15bde1b5bfed1bcdd1c5c8e557333e97c577c8012e0c6f.jpg">
+                                    </div>
+                                    <div class="absolute inset-0 opacity-30 md:opacity-0 group-hover:opacity-80 transition-opacity duration-300"
+                                        style="background-color: rgb(255, 126, 54);"></div>
+                                    <div class="absolute inset-0 p-8 text-white flex flex-col justify-between opacity-100 md:opacity-100 transition-opacity duration-300"
+                                        style="transform: none;">
+                                        <div>
+                                            <p class="text-sm uppercase tracking-wider font-medium mb-1">Branding</p>
+                                            <h3 class="font-heading text-2xl font-bold">Restaurant Rebrand</h3>
+                                        </div>
+                                        <div
+                                            class="h-12 w-12 rounded-full bg-white/20 flex items-center justify-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-arrow-right h-5 w-5 text-white">
+                                                <path d="M5 12h14"></path>
+                                                <path d="m12 5 7 7-7 7"></path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <div class="bg-white p-6 flex justify-center items-center min-h-[80px]"><img
+                                        src="img/bb2d8b6df898ec737fe5a6bc5551b3d0ca23056fcb845e0f88b17be4de319764.jpg"
+                                        alt="Restaurant Rebrand logo" class="h-10"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-16"  data-aos-once="true" data-aos="fade-up"><button
+                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-11 bg-black hover:bg-black/90 text-white rounded-full px-8">View
+                            All Projects</button></div>
+                </div>
+            </section>
+
+            
+
+            <section class="py-20 md:py-28 bg-neutral-100">
+                <div class="container mx-auto px-6">
+                    <div class="text-center max-w-3xl mx-auto mb-16"  data-aos-once="true" data-aos="fade-up">
+                        <span class="text-secondary font-medium">Client Testimonials</span>
+                        <h2 class="font-heading text-3xl md:text-4xl font-bold mt-3 mb-6">What Our Clients Say</h2>
+                        <p class="text-muted-foreground">Don't just take our word for it—hear what our clients have to
+                            say about working with techno.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-white p-8 rounded-xl shadow-sm"  data-aos-once="true" data-aos="fade-up">
+                            <div class="flex mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 fill-yellow-400 text-yellow-400 ml-1 first:ml-0">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 fill-yellow-400 text-yellow-400 ml-1 first:ml-0">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 fill-yellow-400 text-yellow-400 ml-1 first:ml-0">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 fill-yellow-400 text-yellow-400 ml-1 first:ml-0">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 fill-yellow-400 text-yellow-400 ml-1 first:ml-0">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg></div>
+                            <p class="text-muted-foreground italic mb-6">"techno transformed our brand identity and
+                                digital presence. Their strategic approach and creative solutions helped us connect with
+                                our audience in ways we never thought possible."</p>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-neutral-200 overflow-hidden mr-4"><img
+                                        src="img/portraits/women/45.jpg" alt="Sarah Johnson"
+                                        class="w-full h-full object-cover"></div>
+                                <div>
+                                    <p class="font-bold">Sarah Johnson</p>
+                                    <p class="text-muted-foreground text-sm">Marketing Director, TechVision</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-8 rounded-xl shadow-sm"  data-aos-once="true" data-aos="fade-up">
+                            <div class="flex mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 fill-yellow-400 text-yellow-400 ml-1 first:ml-0">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 fill-yellow-400 text-yellow-400 ml-1 first:ml-0">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 fill-yellow-400 text-yellow-400 ml-1 first:ml-0">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 fill-yellow-400 text-yellow-400 ml-1 first:ml-0">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 fill-yellow-400 text-yellow-400 ml-1 first:ml-0">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg></div>
+                            <p class="text-muted-foreground italic mb-6">"Working with techno on our product design
+                                was a game-changer. Their team's ability to blend aesthetics with functionality resulted
+                                in a product that our customers love."</p>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-neutral-200 overflow-hidden mr-4"><img
+                                        src="img/portraits/men/32.jpg" alt="Michael Roberts"
+                                        class="w-full h-full object-cover"></div>
+                                <div>
+                                    <p class="font-bold">Michael Roberts</p>
+                                    <p class="text-muted-foreground text-sm">CEO, Innovate Products</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-8 rounded-xl shadow-sm"  data-aos-once="true" data-aos="fade-up">
+                            <div class="flex mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 fill-yellow-400 text-yellow-400 ml-1 first:ml-0">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 fill-yellow-400 text-yellow-400 ml-1 first:ml-0">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 fill-yellow-400 text-yellow-400 ml-1 first:ml-0">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 fill-yellow-400 text-yellow-400 ml-1 first:ml-0">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-5 h-5 fill-yellow-400 text-yellow-400 ml-1 first:ml-0">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg></div>
+                            <p class="text-muted-foreground italic mb-6">"The team at techno brings a perfect blend
+                                of creativity and strategic thinking. Their work on our website and packaging design has
+                                significantly increased our brand recognition."</p>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-neutral-200 overflow-hidden mr-4"><img
+                                        src="img/portraits/women/68.jpg" alt="Emma Chen"
+                                        class="w-full h-full object-cover"></div>
+                                <div>
+                                    <p class="font-bold">Emma Chen</p>
+                                    <p class="text-muted-foreground text-sm">Founder, Green Earth</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="py-20 relative overflow-hidden">
+                <div class="absolute right-0 bottom-0 w-1/2 h-full bg-gradient-to-l from-yellow-300/10 to-transparent hidden lg:block"
+                     data-aos-once="true" data-aos="fade-up"></div>
+                <div class="absolute top-0 left-0 w-full h-16 bg-blue-600"  data-aos-once="true" data-aos="fade-up"></div>
+                <div class="container mx-auto px-6 relative z-10">
+                    <div class="mb-16"  data-aos-once="true" data-aos="fade-up">
+                        <div class="flex flex-col md:flex-row justify-between md:items-end">
+                            <div><span class="text-blue-600 font-bold inline-block mb-2 text-lg"
+                                     data-aos-once="true" data-aos="fade-right">Get In Touch</span>
+                                <h2 class="font-heading text-4xl md:text-5xl font-bold mb-2"
+                                     data-aos-once="true" data-aos="fade-up">Let's Create Something<br>Amazing
+                                    Together</h2>
+                            </div>
+                            <p class="text-lg text-gray-600 md:text-xl md:max-w-md mt-4 md:mt-0"
+                                 data-aos-once="true" data-aos="fade-up">Ready to elevate your brand? We're
+                                excited to hear about your project and explore how we can bring your vision to life.</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1">
+                        
+                        <div   data-aos-once="true" data-aos="fade-up">
+                            <div class="bg-white p-10 rounded-2xl shadow-xl">
+                                <h3 class="font-heading text-2xl font-bold mb-8">Send Us a Message</h3>
+                                
+
+                                <form class="space-y-6" id="contact-form">
+                                    <div class="space-y-2">
+                                        <input
+                                            class="flex h-10 w-full border bg-background text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm px-4 py-3 rounded-lg border-gray-300 focus:border-blue-600 focus:ring-blue-600"
+                                            placeholder="Full Name" name="name" id=":r1:-form-item" aria-describedby=":r1:-form-item-description"
+                                            aria-invalid="false" value=""></div>
+                                    <div class="space-y-2"><input type="email"
+                                            class="flex h-10 w-full border bg-background text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm px-4 py-3 rounded-lg border-gray-300 focus:border-blue-600 focus:ring-blue-600"
+                                            placeholder="Email" name="email" id=":r2:-form-item" aria-describedby=":r2:-form-item-description"
+                                            aria-invalid="false" value=""></div>
+                                    <div class="space-y-2">
+                                        <div class="flex" id=":r3:-form-item" aria-describedby=":r3:-form-item-description" aria-invalid="false">
+                                            <div class="border border-gray-300 rounded-l-lg px-3 flex items-center">
+                                                <input type="text" name="countryCode" id="countryCode" value="+852" class="w-12 text-sm text-gray-600 bg-transparent focus:outline-none text-center">
+                                            </div>
+                                            <input
+                                                class="flex h-10 w-full rounded-md border bg-background text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm rounded-l-none px-4 py-3 border-gray-300 focus:border-blue-600 focus:ring-blue-600 flex-1"
+                                                placeholder="Phone Number" name="phoneNumber" value="">
+                                        </div>
+                                    </div>
+                                    <div class="space-y-2"><input
+                                            class="flex h-10 w-full border bg-background text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm px-4 py-3 rounded-lg border-gray-300 focus:border-blue-600 focus:ring-blue-600"
+                                            placeholder="Company name" name="companyName" id="companyName"
+                                            aria-describedby=":r4:-form-item-description" aria-invalid="false" value=""></div>
+                                    <div class="space-y-2"><input
+                                            class="flex h-10 w-full border bg-background text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm px-4 py-3 rounded-lg border-gray-300 focus:border-blue-600 focus:ring-blue-600"
+                                            placeholder="Job Title (Job Title)" name="jobTitle" id="jobTitle"
+                                            aria-describedby=":r5:-form-item-description" aria-invalid="false" value=""></div>
+                                    <div class="space-y-2">
+                                        
+                                            <select name="country"  aria-hidden="true" tabindex="-1" class="flex w-full border bg-background text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm px-4 py-3 rounded-lg border-gray-300 focus:border-blue-600 focus:ring-blue-600">
+                                                <option value="">Country</option>
+                                                <option value="United States">United States</option>
+                                            <option value="United Kingdom">United Kingdom</option>
+                                            <option value="Canada">Canada</option>
+                                            <option value="Australia">Australia</option>
+                                            <option value="Germany">Germany</option>
+                                            <option value="France">France</option>
+                                            <option value="Japan">Japan</option>
+                                            <option value="China">China</option>
+                                            <option value="India">India</option>
+                                            <option value="Brazil">Brazil</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <textarea
+                                            class="flex min-h-[80px] w-full border bg-background text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm px-4 py-3 rounded-lg resize-none border-gray-300 focus:border-blue-600 focus:ring-blue-600"
+                                            placeholder="Enquiry" rows="5" name="message" id=":r8:-form-item"
+                                            aria-describedby=":r8:-form-item-description" aria-invalid="false"></textarea></div>
+                                    <div class="text-sm text-gray-600">
+                                        <p class="mb-2">We will use your personal data for marketing and sales purposes. For more information on how we
+                                            use your personal data please see our <a href="privacy-policy.html"
+                                                class="text-blue-600 hover:underline">Privacy Notice</a>.</p>
+                                        <div class="space-y-2 flex items-start space-x-2 mt-4"><input type="checkbox" class="mt-1" id=":r9:-form-item"
+                                                aria-describedby=":r9:-form-item-description" aria-invalid="false">
+                                            <div class="leading-tight"><label
+                                                    class="text-sm leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 font-normal text-gray-600"
+                                                    for=":r9:-form-item">Yes – I would like to receive news and communications from techno and
+                                                    techno agencies.</label>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-6"><button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 px-4 w-full bg-yellow-500 text-black hover:bg-yellow-600 rounded-none py-4 font-bold text-lg"
+                                            type="submit">SUBMIT</button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="bg-blue-600 py-20 text-white relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-8 bg-yellow-300"></div>
+                    <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-500/30 rounded-full -mb-48 -mr-48 blur-3xl">
+                    </div>
+                    <div class="absolute top-0 left-0 w-96 h-96 bg-blue-700/30 rounded-full -mt-48 -ml-48 blur-3xl">
+                    </div>
+                    <div class="container mx-auto px-6 relative">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                            <div  data-aos-once="true" data-aos="fade-up">
+                                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-6">Stay updated with our
+                                    latest insights</h2>
+                                <p class="text-white/80 text-lg mb-8 max-w-md">Join our newsletter to receive news,
+                                    updates, and design inspiration right to your inbox.</p>
+                                <form class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 max-w-md" id="newsletter-form">
+                                    <input
+                                        type="email"
+                                        id="newsletter-email"
+                                        class="flex h-10 w-full rounded-md border-input text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm bg-white/10 border-0 focus:ring-white rounded-l-lg rounded-r-lg sm:rounded-r-none px-4 py-6 text-white placeholder:text-white/60"
+                                        placeholder="Your email address">
+                                        <button
+                                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 bg-white text-blue-600 hover:bg-white/90 rounded-l-lg sm:rounded-l-none rounded-r-lg px-6 py-6 font-bold"
+                                        type="submit">Subscribe</button>
+                                </form>
+                                <div class="flex items-center space-x-3 max-w-md hidden" data-aos-once="true" data-aos="fade-up">
+                                    <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-check w-6 h-6 text-white">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg></div>
+                                    <div>
+                                        <p class="text-white font-bold text-lg">Thank you for signing up!</p>
+                                        <p class="text-white/70">You'll receive our latest updates soon.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-end"  data-aos-once="true" data-aos="fade-up">
+                                <div class="space-y-6 max-w-sm">
+                                    <h3 class="font-heading text-2xl font-bold mb-6">Our Global Offices</h3>
+                                    <div class="space-y-4">
+                                        <div  data-aos-once="true" data-aos="fade-left">
+                                            <div class="flex items-center space-x-3">
+                                                <div
+                                                    class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-map h-4 w-4">
+                                                        <path
+                                                            d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z">
+                                                        </path>
+                                                        <path d="M15 5.764v15"></path>
+                                                        <path d="M9 3.236v15"></path>
+                                                    </svg></div>
+                                                <div>
+                                                    <p class="font-medium">London, UK</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div  data-aos-once="true" data-aos="fade-left">
+                                            <div class="flex items-center space-x-3">
+                                                <div
+                                                    class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-map h-4 w-4">
+                                                        <path
+                                                            d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z">
+                                                        </path>
+                                                        <path d="M15 5.764v15"></path>
+                                                        <path d="M9 3.236v15"></path>
+                                                    </svg></div>
+                                                <div>
+                                                    <p class="font-medium">Bangkok, Thailand</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-aos-once="true" data-aos="fade-left">
+                                            <div class="flex items-center space-x-3">
+                                                <div
+                                                    class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-map h-4 w-4">
+                                                        <path
+                                                            d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z">
+                                                        </path>
+                                                        <path d="M15 5.764v15"></path>
+                                                        <path d="M9 3.236v15"></path>
+                                                    </svg></div>
+                                                <div>
+                                                    <p class="font-medium">Hong Kong, China</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-black text-white py-16">
+                    <div class="container mx-auto px-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-16">
+                            <div class="lg:col-span-4"  data-aos-once="true" data-aos="fade-up">
+                                <a href="/"
+                                    class="font-heading font-bold text-3xl mb-6 inline-block">techno<span
+                                        class="text-blue-500">tech</span></a>
+                                <p class="text-white/70 mb-8 max-w-md">  16358363 <br>company address .<br>
+                                    A multidisciplinary agency providing strategy,
+                                    innovation, branding, and design services for ambitious businesses.</p>
+                                
+                            </div>
+                            <div class="lg:col-span-8">
+                                <div class="grid grid-cols-1 sm:grid-cols-2  gap-10">
+                                    <div  data-aos-once="true" data-aos="fade-up">
+                                        <h3 class="font-heading font-bold text-xl mb-6">Services</h3>
+                                        <ul class="space-y-3">
+                                            <li  data-aos-once="true" data-aos="fade-up"><a href="#services"
+                                                    class="hover:text-yellow-300 transition-colors duration-200 flex items-center group"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-arrow-right h-4 w-0 mr-0 group-hover:w-4 group-hover:mr-2 transition-all duration-200 overflow-hidden">
+                                                        <path d="M5 12h14"></path>
+                                                        <path d="m12 5 7 7-7 7"></path>
+                                                    </svg>Strategy &amp; Innovation</a></li>
+                                            <li  data-aos-once="true" data-aos="fade-up"><a href="#services"
+                                                    class="hover:text-yellow-300 transition-colors duration-200 flex items-center group"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-arrow-right h-4 w-0 mr-0 group-hover:w-4 group-hover:mr-2 transition-all duration-200 overflow-hidden">
+                                                        <path d="M5 12h14"></path>
+                                                        <path d="m12 5 7 7-7 7"></path>
+                                                    </svg>Branding Design</a></li>
+                                            <li  data-aos-once="true" data-aos="fade-up"><a href="#services"
+                                                    class="hover:text-yellow-300 transition-colors duration-200 flex items-center group"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-arrow-right h-4 w-0 mr-0 group-hover:w-4 group-hover:mr-2 transition-all duration-200 overflow-hidden">
+                                                        <path d="M5 12h14"></path>
+                                                        <path d="m12 5 7 7-7 7"></path>
+                                                    </svg>Digital Design</a></li>
+                                            <li  data-aos-once="true" data-aos="fade-up"><a href="#services"
+                                                    class="hover:text-yellow-300 transition-colors duration-200 flex items-center group"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-arrow-right h-4 w-0 mr-0 group-hover:w-4 group-hover:mr-2 transition-all duration-200 overflow-hidden">
+                                                        <path d="M5 12h14"></path>
+                                                        <path d="m12 5 7 7-7 7"></path>
+                                                    </svg>Product Design</a></li>
+                                            <li  data-aos-once="true" data-aos="fade-up"><a href="#services"
+                                                    class="hover:text-yellow-300 transition-colors duration-200 flex items-center group"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-arrow-right h-4 w-0 mr-0 group-hover:w-4 group-hover:mr-2 transition-all duration-200 overflow-hidden">
+                                                        <path d="M5 12h14"></path>
+                                                        <path d="m12 5 7 7-7 7"></path>
+                                                    </svg>Packaging Design</a></li>
+                                        </ul>
+                                    </div>
+                                    <div  data-aos-once="true" data-aos="fade-up">
+                                        <h3 class="font-heading font-bold text-xl mb-6">Company</h3>
+                                        <ul class="space-y-3">
+                                            <li  data-aos-once="true" data-aos="fade-right"><a href="#about"
+                                                    class="hover:text-yellow-300 transition-colors duration-200 flex items-center group"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-arrow-right h-4 w-0 mr-0 group-hover:w-4 group-hover:mr-2 transition-all duration-200 overflow-hidden">
+                                                        <path d="M5 12h14"></path>
+                                                        <path d="m12 5 7 7-7 7"></path>
+                                                    </svg>About Us</a></li>
+                                            <li  data-aos-once="true" data-aos="fade-right"><a href="#work"
+                                                    class="hover:text-yellow-300 transition-colors duration-200 flex items-center group"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-arrow-right h-4 w-0 mr-0 group-hover:w-4 group-hover:mr-2 transition-all duration-200 overflow-hidden">
+                                                        <path d="M5 12h14"></path>
+                                                        <path d="m12 5 7 7-7 7"></path>
+                                                    </svg>Our Work</a></li>
+                                            <li  data-aos-once="true" data-aos="fade-right"><a href="#"
+                                                    class="hover:text-yellow-300 transition-colors duration-200 flex items-center group"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-arrow-right h-4 w-0 mr-0 group-hover:w-4 group-hover:mr-2 transition-all duration-200 overflow-hidden">
+                                                        <path d="M5 12h14"></path>
+                                                        <path d="m12 5 7 7-7 7"></path>
+                                                    </svg>Careers</a></li>
+                                            <li  data-aos-once="true" data-aos="fade-right"><a href="#"
+                                                    class="hover:text-yellow-300 transition-colors duration-200 flex items-center group"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-arrow-right h-4 w-0 mr-0 group-hover:w-4 group-hover:mr-2 transition-all duration-200 overflow-hidden">
+                                                        <path d="M5 12h14"></path>
+                                                        <path d="m12 5 7 7-7 7"></path>
+                                                    </svg>Blog</a></li>
+                                            <li  data-aos-once="true" data-aos="fade-right"><a href="#contact"
+                                                    class="hover:text-yellow-300 transition-colors duration-200 flex items-center group"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-arrow-right h-4 w-0 mr-0 group-hover:w-4 group-hover:mr-2 transition-all duration-200 overflow-hidden">
+                                                        <path d="M5 12h14"></path>
+                                                        <path d="m12 5 7 7-7 7"></path>
+                                                    </svg>Contact</a></li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center"
+                             data-aos-once="true" data-aos="fade-up">
+                            <p class="text-white/50 mb-4 md:mb-0">© 2025 techno Ltd. </p>
+                            <div class="flex flex-wrap justify-center space-x-6"><a href="privacy-policy.html"
+                                    class="text-white/50 hover:text-white/80 transition-colors">Privacy Policy</a><a
+                                    href="terms-of-service.html"
+                                    class="text-white/50 hover:text-white/80 transition-colors">Terms of Service</a><a
+                                    href="refund-policy.html"
+                                    class="text-white/50 hover:text-white/80 transition-colors">Refund Policy</a><a
+                                    href="cookies-policy.html"
+                                    class="text-white/50 hover:text-white/80 transition-colors">Cookies</a></div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js"
+    integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/additional-methods.min.js"
+    integrity="sha512-owaCKNpctt4R4oShUTTraMPFKQWG9UdWTtG6GRzBjFV4VypcFi6+M3yc4Jk85s3ioQmkYWJbUl1b2b2r41RTjA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+<script src="js/recaptcha.js"></script>
+    <script src="js/main.js"></script>
+<script>
+    
+  </script>
+</body>
+
+</html>

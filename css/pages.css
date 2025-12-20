@@ -3960,61 +3960,61 @@ a:not(.btn):not(.no-underline) {
 }
 
 :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --muted: 60 4.8% 95.9%;
-    --muted-foreground: 25 5.3% 44.7%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --border: 20 5.9% 90%;
-    --input: 20 5.9% 90%;
-    --primary: 0 0% 0%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 224 89% 60%;
-    --secondary-foreground: 211 100% 99%;
-    --accent: 48 100% 67%;
-    --accent-foreground: 0 0% 0%;
+    --background: 260 40% 98%;
+    --foreground: 260 18% 14%;
+    --muted: 260 30% 96%;
+    --muted-foreground: 260 12% 45%;
+    --popover: 260 40% 98%;
+    --popover-foreground: 260 18% 14%;
+    --card: 260 40% 98%;
+    --card-foreground: 260 18% 14%;
+    --border: 260 20% 88%;
+    --input: 260 20% 88%;
+    --primary: 270 76% 58%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 300 80% 65%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 252 60% 70%;
+    --accent-foreground: 260 18% 14%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 60 9.1% 97.8%;
-    --ring: 240 4.9% 83.9%;
+    --ring: 270 60% 85%;
     --radius: .5rem;
-    --chart-1: 224 89% 60%;
-    --chart-2: 48 100% 67%;
-    --chart-3: 326 73% 62%;
-    --chart-4: 162 94% 39%;
-    --chart-5: 271 91% 57%;
-    --sidebar-background: 240 10% 3.9%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 224 89% 60%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 48 100% 67%;
-    --sidebar-accent-foreground: 0 0% 0%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 240 4.9% 83.9%
+    --chart-1: 270 76% 58%;
+    --chart-2: 252 60% 70%;
+    --chart-3: 300 80% 65%;
+    --chart-4: 262 60% 45%;
+    --chart-5: 274 70% 60%;
+    --sidebar-background: 260 18% 16%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 270 76% 58%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 252 60% 70%;
+    --sidebar-accent-foreground: 260 18% 14%;
+    --sidebar-border: 260 12% 20%;
+    --sidebar-ring: 270 60% 85%
 }
 
 .dark {
-    --background: 240 10% 3.9%;
+    --background: 260 16% 12%;
     --foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --popover: 240 10% 3.9%;
+    --muted: 260 12% 18%;
+    --muted-foreground: 260 8% 70%;
+    --popover: 260 16% 12%;
     --popover-foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
+    --card: 260 16% 12%;
     --card-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --primary: 0 0% 5%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 218 95% 53%;
-    --secondary-foreground: 0 0% 98%;
-    --accent: 15 100% 60%;
-    --accent-foreground: 0 0% 98%;
+    --border: 260 12% 20%;
+    --input: 260 12% 20%;
+    --primary: 270 76% 58%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 300 80% 65%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 252 60% 70%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --ring: 240 4.9% 83.9%
+    --ring: 270 60% 40%
 }
 
 .file\:border-0::file-selector-button {

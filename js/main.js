@@ -1,7 +1,8 @@
 $(document).ready(function () {
-
+  // Init AOS
   AOS.init();
 
+  /* ---------------- MOBILE MENU ---------------- */
   const openMenuBtn = $("#open-menu");
   const closeMenuBtn = $("#close-menu");
   const mobileMenu = $("#mobile-menu");
@@ -14,7 +15,7 @@ $(document).ready(function () {
     mobileMenu.removeClass("translate-x-0").addClass("translate-x-full");
   });
 
-  // Swiper
+  /* ---------------- SWIPER ---------------- */
   new Swiper(".swiper", {
     direction: "vertical",
     loop: true,
@@ -25,7 +26,7 @@ $(document).ready(function () {
     },
   });
 
-  // Tabs
+  /* ---------------- TABS ---------------- */
   const allTabsBtn = document.querySelectorAll("#tabs-btns button");
   const allTabsBlock = document.querySelectorAll("#tabs-block > div");
 
@@ -47,7 +48,7 @@ $(document).ready(function () {
     });
   });
 
-  // ---------------- CONTACT FORM ----------------
+  /* ---------------- CONTACT FORM ---------------- */
   if ($("#contact-form").length) {
     $("#contact-form").validate({
       errorElement: "p",
@@ -93,28 +94,33 @@ $(document).ready(function () {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(dataObj),
         })
-          .then((res) => {
-            if (!res.ok) throw new Error("Network error");
-            return res.json();
+          .then(async (res) => {
+            const data = await res.json();
+            if (!res.ok) throw new Error(data.message || "Submission failed");
+            return data;
           })
-          .then(() => {
+          .then((data) => {
+            console.log("MongoDB contact saved:", data);
             window.location.href = "thank-you-contact.html";
           })
-          .catch(() => {
-            alert("Sending failed. Please try again later.");
+          .catch((err) => {
+            alert(err.message || "Sending failed. Please try again later.");
             $btn.text("SUBMIT").removeAttr("disabled");
           });
       },
     });
   }
 
-  // ---------------- NEWSLETTER FORM ----------------
+  /* ---------------- NEWSLETTER FORM ---------------- */
   if ($("#newsletter-form").length) {
     $("#newsletter-form").on("submit", function (e) {
       e.preventDefault();
 
       const email = $("#newsletter-email").val().trim();
-      if (!email) return alert("Please enter a valid email.");
+      if (!email) {
+        alert("Please enter a valid email.");
+        return;
+      }
 
       const $btn = $("#newsletter-form button[type='submit']");
       $btn.text("Subscribing...").attr("disabled", true);
@@ -124,23 +130,25 @@ $(document).ready(function () {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
       })
-        .then((res) => {
-          if (!res.ok) throw new Error();
-          return res.json();
+        .then(async (res) => {
+          const data = await res.json();
+          if (!res.ok) throw new Error(data.message || "Subscription failed");
+          return data;
         })
-        .then(() => {
+        .then((data) => {
+          console.log("MongoDB newsletter saved:", data);
           alert("Thank you for subscribing!");
           $("#newsletter-email").val("");
           $btn.text("Subscribe").removeAttr("disabled");
         })
-        .catch(() => {
-          alert("Subscription failed.");
+        .catch((err) => {
+          alert(err.message || "Subscription failed.");
           $btn.text("Subscribe").removeAttr("disabled");
         });
     });
   }
 
-  // Hero scroll animation
+  /* ---------------- HERO SCROLL EFFECT ---------------- */
   const hero = document.getElementById("hero-container");
   if (hero) {
     const heroHeight = hero.offsetHeight;
@@ -151,7 +159,7 @@ $(document).ready(function () {
     });
   }
 
-  // Floating dots animation
+  /* ---------------- FLOATING DOTS ---------------- */
   document.querySelectorAll(".dot").forEach((dot) => {
     dot.animate(
       [
@@ -172,5 +180,4 @@ $(document).ready(function () {
       }
     );
   });
-
 });
